@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Movie myMovie = new Movie();
+        myMovie.title = "Pride and Prejudice";
+        myMovie.releaseYear = 2005;
+        myMovie.movieLength = 127;
+        myMovie.rate = 8.7;
+        myMovie.includedOnSubscription = true;
+
+        myMovie.showTechSheet()     ;
+
     }
 }
