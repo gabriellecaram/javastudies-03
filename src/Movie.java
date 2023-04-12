@@ -1,4 +1,4 @@
-//Class 02 - Subject: classes and methods
+//Class 03 - Subject: classes and methods
 
 public class Movie {
     String title;
