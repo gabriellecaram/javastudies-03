@@ -1,9 +1,12 @@
+import caram.gabrielle.streaming.calculation.Recommendation;
 import caram.gabrielle.streaming.calculation.TimeCalculator;
+import caram.gabrielle.streaming.template.Episode;
 import caram.gabrielle.streaming.template.Movie;
 import caram.gabrielle.streaming.template.Series;
 
 //Class 03 - Subject: classes and methods, encapsulation, access modifiers,
-//importing packages, getters and setters, this, inheritance: subclasses and superclasses; annotations
+//importing packages, getters and setters, this, inheritance: subclasses and superclasses;
+//annotations, interfaces
 //access modifiers: public, protected, private, default.
 //shift + F6 = renames an element
 //alt + insert = getters and setters
@@ -44,5 +47,16 @@ public class Main {
         //System.out.println(timeCalculator.getTotalTime());
         timeCalculator.showTotalTime();
 
+
+        System.out.println("\n---------");
+        Episode episode1 = new Episode();
+        Recommendation recommendation = new Recommendation();
+        episode1.setNumber(1);
+        episode1.setName("Pilot");
+        episode1.setSeries(riverdale);
+        episode1.setTotalViews(1000);
+        episode1.setLength(55);
+        episode1.showTechSheet();
+        recommendation.filter(episode1);
     }
 }

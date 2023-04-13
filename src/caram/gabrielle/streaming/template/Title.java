@@ -15,7 +15,6 @@ public class Title {
     public int getLength(){
         return this.length;
     }
-
     public String getTitle() {
         return title;
     }
@@ -49,6 +48,9 @@ public class Title {
     public void rating(double rate){
         sumOfRatings += rate;
         totalRatings++;
+    }
+    public double average(){
+        return sumOfRatings/totalRatings;
     }
     public void showAverage(){
         System.out.printf("Average rate: %.1f\n", sumOfRatings/totalRatings);

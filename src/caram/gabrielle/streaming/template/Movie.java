@@ -1,5 +1,11 @@
 package caram.gabrielle.streaming.template;
 
-public class Movie extends Title{
+import caram.gabrielle.streaming.calculation.Rating;
 
+public class Movie extends Title implements Rating {
+
+    @Override
+    public double getRating() {
+        return average();
+    }
 }
