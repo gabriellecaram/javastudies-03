@@ -50,6 +50,6 @@ public class Episode extends Recommendation implements Rating {
         System.out.println("Episode " + getNumber() + ": " + getName());
         System.out.println("Views: " + getTotalViews());
         System.out.println("Rating: " + getRating() + " stars");
-        System.out.println("Duration: " + getLength());
+        System.out.println("Duration: " + getLength() +" min");
     }
 }

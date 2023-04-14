@@ -4,19 +4,21 @@ import caram.gabrielle.streaming.template.Episode;
 import caram.gabrielle.streaming.template.Movie;
 import caram.gabrielle.streaming.template.Series;
 
+import java.util.ArrayList;
+
 //Class 03 - Subject: classes and methods, encapsulation, access modifiers,
 //importing packages, getters and setters, this, inheritance: subclasses and superclasses;
-//annotations, interfaces
+//annotations, interfaces, var, arraylist, Object class, toString, constructor
 //access modifiers: public, protected, private, default.
 //shift + F6 = renames an element
 //alt + insert = getters and setters
+//cant use "var" without initial value
 
 public class Main {
     public static void main(String[] args) {
 
         System.out.println("\n---------");
-        Movie spiderman = new Movie();
-        spiderman.setTitle("Spiderman");
+        Movie spiderman = new Movie("Spiderman");
         spiderman.setReleaseYear(2005);
         spiderman.setLength(127);
         spiderman.rating(10);
@@ -58,5 +60,24 @@ public class Main {
         episode1.setLength(55);
         episode1.showTechSheet();
         recommendation.filter(episode1);
+
+        System.out.println("\n---------");
+        Movie titanic = new Movie("Titanic");
+        titanic.setTitle("Titanic");
+        titanic.setLength(194);
+        titanic.setReleaseYear(1998);
+        titanic.setIncludedOnSubscription(true);
+        titanic.rating(10);
+        titanic.showTechSheet();
+
+        System.out.println("\n---------");
+//        var moviesList = new ArrayList<Movie>();
+        ArrayList<Movie> moviesList = new ArrayList<>();
+        moviesList.add(titanic);
+        moviesList.add(spiderman);
+        System.out.println("List size: " + moviesList.size());
+        System.out.println("1st movie: " + moviesList.get(0).getTitle());
+
+        System.out.println(moviesList);
     }
 }

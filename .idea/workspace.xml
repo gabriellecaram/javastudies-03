@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70b313f2-da62-44dc-bae4-f037bd31c041" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/caram/gabrielle/streaming/calculation/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/caram/gabrielle/streaming/calculation/Recommendation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Episode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Episode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/caram/gabrielle/streaming/template/Title.java" afterDir="false" />
     </list>

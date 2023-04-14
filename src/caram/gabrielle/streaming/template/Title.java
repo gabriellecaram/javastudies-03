@@ -9,6 +9,13 @@ public class Title {
     private int releaseYear;
     private int length; //in minutes
 
+    @Override
+    public String toString() {
+        return "Movie: " + this.getTitle() +"(" + this.releaseYear + ")\n";
+    }
+
+
+
     public void setLength(int length) {
         this.length = length;
     }
@@ -42,7 +49,7 @@ public class Title {
     public void showTechSheet(){
         System.out.println("Title: " + title);
         System.out.println("Release year: " + releaseYear);
-        System.out.println("Length: " + getLength());
+        System.out.println("Length: " + getLength() + " min");
         showAverage();
     }
     public void rating(double rate){
