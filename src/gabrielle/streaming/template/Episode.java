@@ -1,6 +1,6 @@
-package caram.gabrielle.streaming.template;
-import caram.gabrielle.streaming.calculation.Rating;
-import caram.gabrielle.streaming.calculation.Recommendation;
+package gabrielle.streaming.template;
+import gabrielle.streaming.calculation.Rating;
+import gabrielle.streaming.calculation.Recommendation;
 
 public class Episode extends Recommendation implements Rating {
     private int number;

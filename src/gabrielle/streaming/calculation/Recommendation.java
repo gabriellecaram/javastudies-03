@@ -1,4 +1,4 @@
-package caram.gabrielle.streaming.calculation;
+package gabrielle.streaming.calculation;
 
 public class Recommendation {
 

@@ -1,11 +1,15 @@
-package caram.gabrielle.streaming.template;
+package gabrielle.streaming.template;
 
-public class Series extends Title{
+public class Series extends Title {
 
     private int seasons;
     private int episodes;
     private boolean finished;
     private int episodesLength;
+
+    public Series(String title, int releaseYear) {
+        super(title, releaseYear);
+    }
 
     public void setSeasons(int seasons) {
         this.seasons = seasons;

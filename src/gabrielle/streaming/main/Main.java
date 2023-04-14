@@ -1,14 +1,17 @@
-import caram.gabrielle.streaming.calculation.Recommendation;
-import caram.gabrielle.streaming.calculation.TimeCalculator;
-import caram.gabrielle.streaming.template.Episode;
-import caram.gabrielle.streaming.template.Movie;
-import caram.gabrielle.streaming.template.Series;
+package gabrielle.streaming.main;
+
+import gabrielle.streaming.calculation.Recommendation;
+import gabrielle.streaming.calculation.TimeCalculator;
+import gabrielle.streaming.template.Episode;
+import gabrielle.streaming.template.Movie;
+import gabrielle.streaming.template.Series;
 
 import java.util.ArrayList;
 
 //Class 03 - Subject: classes and methods, encapsulation, access modifiers,
 //importing packages, getters and setters, this, inheritance: subclasses and superclasses;
-//annotations, interfaces, var, arraylist, Object class, toString, constructor
+//annotations, interfaces, var, arraylist, Object class, toString, constructor, pointers
+
 //access modifiers: public, protected, private, default.
 //shift + F6 = renames an element
 //alt + insert = getters and setters
@@ -18,17 +21,16 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("\n---------");
-        Movie spiderman = new Movie("Spiderman");
-        spiderman.setReleaseYear(2005);
-        spiderman.setLength(127);
+        Movie spiderman = new Movie("Spiderman", 2005, 140);
         spiderman.rating(10);
         spiderman.rating(9);
         spiderman.rating(10);
         spiderman.setIncludedOnSubscription(true);
         spiderman.showTechSheet();
+        System.out.println("total rating: " + spiderman.getTotalRatings());
 
         System.out.println("\n---------");
-        Series riverdale = new Series();
+        Series riverdale = new Series("Riverdale", 2017);
         riverdale.setTitle("Riverdale");
         riverdale.setReleaseYear(2017);
         riverdale.setFinished(true);
@@ -62,10 +64,7 @@ public class Main {
         recommendation.filter(episode1);
 
         System.out.println("\n---------");
-        Movie titanic = new Movie("Titanic");
-        titanic.setTitle("Titanic");
-        titanic.setLength(194);
-        titanic.setReleaseYear(1998);
+        Movie titanic = new Movie("Titanic",1998, 194);
         titanic.setIncludedOnSubscription(true);
         titanic.rating(10);
         titanic.showTechSheet();

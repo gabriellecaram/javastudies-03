@@ -1,8 +1,6 @@
-package caram.gabrielle.streaming.calculation;
+package gabrielle.streaming.calculation;
 
-import caram.gabrielle.streaming.template.Movie;
-import caram.gabrielle.streaming.template.Series;
-import caram.gabrielle.streaming.template.Title;
+import gabrielle.streaming.template.Title;
 
 public class TimeCalculator {
     private int totalTime;
