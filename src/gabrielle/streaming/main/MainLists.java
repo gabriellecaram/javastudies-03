@@ -19,7 +19,7 @@ public class MainLists {
         titanic.rating(10);
 
         Movie movie1 = titanic; //its not a copy of titanic, its a pointer -> to titanic.
-        
+
         System.out.println("\n---------");
         ArrayList<Title> listWatchedTitles = new ArrayList<>();
         listWatchedTitles.add(titanic);

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 //Class 03 - Subject: classes and methods, encapsulation, access modifiers,
 //importing packages, getters and setters, this, inheritance: subclasses and superclasses;
-//annotations, interfaces, var, arraylist, Object class, toString, constructor, pointers
+//annotations, interfaces, var, arraylist, Object class, toString, constructor, pointers 
 
 //access modifiers: public, protected, private, default.
 //shift + F6 = renames an element
