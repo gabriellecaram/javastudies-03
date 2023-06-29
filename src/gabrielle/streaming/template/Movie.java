@@ -15,4 +15,5 @@ public class Movie extends Title implements Rating {
     public Movie(String title, int releaseYear, int length){
         super(title, releaseYear, length);
     }
+
 }

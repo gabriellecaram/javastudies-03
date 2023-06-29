@@ -42,4 +42,9 @@ public class Series extends Title {
         return seasons*episodes*episodesLength/60;
     }
 
+    @Override
+    public String toString(){
+        return this.getTitle() + ", " + this.getReleaseYear();
+    }
+
 }

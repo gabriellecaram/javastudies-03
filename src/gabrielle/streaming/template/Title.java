@@ -1,31 +1,49 @@
 package gabrielle.streaming.template;
 
-public class Title {
+import com.google.gson.annotations.SerializedName;
 
+public class Title implements Comparable<Title> {
+
+//  @SerializedName("Title") //pode tirar porque tá usando record.
     private String title;
     private double sumOfRatings;
     private int totalRatings;
     private boolean includedOnSubscription;
+//  @SerializedName("Year")
     private int releaseYear;
     private int length; //in minutes
 
-//  constructor
+//  constructors
     public Title(String title, int releaseYear) {
         this.title = title;
         this.releaseYear = releaseYear;
         this.length = length;
     }
-
-//  constructor
     public Title(String title, int releaseYear, int length){
         this.title = title;
         this.releaseYear = releaseYear;
         this.length = length;
     }
 
+    public Title(TitleOMDB titleOMDB) {
+         this.title = titleOMDB.title();
+         this.releaseYear = Integer.valueOf(titleOMDB.year()); //conversão de string pra int
+         this.length = Integer
+                 .valueOf(titleOMDB.runtime().substring(0,3));
+    }
+
+    @Override
+    public int compareTo(Title otherTitle) {
+        return this.getTitle().compareTo(otherTitle.getTitle());
+    }
+
+//    public interface Comparator {
+//        int compare(Title firstTitle, Title secondTitle);
+//    }
+
     @Override
     public String toString() {
-        return "Movie: " + this.getTitle() +" (" + this.releaseYear + ")\n";
+        return this.getTitle() +" (" + this.getReleaseYear() + ")" + ", " + this.getLength();
     }
 
 //  Movie Technical sheet
@@ -35,7 +53,6 @@ public class Title {
         System.out.println("Length: " + getLength() + " min");
         showAverage();
     }
-
     public void rating(double rate){
         sumOfRatings += rate;
         totalRatings++;
@@ -73,5 +90,8 @@ public class Title {
     }
     public void setReleaseYear(int releaseYear) {
         this.releaseYear = releaseYear;
+    }
+    public int getReleaseYear() {
+        return releaseYear;
     }
 }
