@@ -7,10 +7,14 @@ import gabrielle.streaming.template.Movie;
 import gabrielle.streaming.template.Series;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
-//Class 03 - Subject: classes and methods, encapsulation, access modifiers,
+//Class 03 - Subjects: classes and methods, encapsulation, access modifiers,
 //importing packages, getters and setters, this, inheritance: subclasses and superclasses;
-//annotations, interfaces, var, arraylist, Object class, toString, constructor, pointers 
+//annotations, interfaces, var, arraylist, Object class, toString, constructor, pointers, comparable, comparator
+//arraylist, linkedList
+//API, HttpResponse, HttpClient, HttpRequest, Gson Library, @SerializedName(""), Java Record
 
 //access modifiers: public, protected, private, default.
 //shift + F6 = renames an element
@@ -39,8 +43,6 @@ public class Main {
         riverdale.setEpisodes(76);
         riverdale.setEpisodesLength(60);
         riverdale.rating(10);
-        riverdale.rating(7);
-        riverdale.rating(8.2);
         riverdale.showTechSheet();
 
         System.out.println("\n---------");
@@ -70,8 +72,9 @@ public class Main {
         titanic.showTechSheet();
 
         System.out.println("\n---------");
-//        var moviesList = new ArrayList<Movie>();
-        ArrayList<Movie> moviesList = new ArrayList<>();
+//      var moviesList = new ArrayList<Movie>();
+//      ArrayList<Movie moviesList = new ArrayList<>();
+        List<Movie> moviesList = new LinkedList<>(); //List is an Interface. can't use new List.
         moviesList.add(titanic);
         moviesList.add(spiderman);
         System.out.println("List size: " + moviesList.size());
